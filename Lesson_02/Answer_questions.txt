@@ -1,0 +1,31 @@
+1. Why do we need machine learning methods instead of creating a complicated formula?
+Ans:计算机发展初始阶段，人们设计函数，思考的是生成什么样的函数来使计算机完成工作，但随着数据量的急速增加，
+    难以通过人的思维编写合适的程序代码；同时，程序设计者也面临很多问题，如负责设计算法处理垃圾邮件的程序员，
+    程序升级后又面临新的斗争，形成拉锯战；
+        而机器学习，是根据数据生成函数，如用概率模型等基于已有数据，生成函数，再来为我们做事。
+
+2. Wha't's the disadvantages of the 1st Random Choosen methods in our course?
+Ans:1）k、b初始赋值随机性大；
+    2）每次尝试，k、b都是随机变化，缺乏变化方向；
+    3）测试结果受尝试次数影响大，且往往需要较多的尝试次数；
+    4）线性拟合，本身的复杂度不够，容易出现欠拟合、过拟合的情况。
+
+3. Is the 2nd method supervised direction better than 1st one? What's the disadvantages of the 2nd supversied directin method?
+Ans:是的，但仍然有较多缺点；
+    1）k、b有变化方向，但不一定每次都是沿正确方向变化，缺乏变化方向的监督；
+    2）k、b变化幅度不一定合理；针对loss函数不同的因变量范围，对k、b的变化步幅需要严格控制；
+    3）未能解决线性拟合复杂度不够，容易出现欠拟合、过拟合的问题。
+
+4. Why do we use Derivative / Gredient to fit a target function?
+Ans:通过梯度下降的方法，对变量求偏导，确定变量（k、b）的变化方向（沿着偏导的反方向变化），来实现对k、b变化方向的有效监督，提高效率。
+
+5. In the words 'Gredient Descent', what's the Gredient and what's the Descent?
+Ans:梯度是高维导数的另一种说法，它给出了最陡峭的上升方向，对于二次曲线，就是对x的导数，对于三维曲面，梯度就是曲面某点对指定方向的偏导数；
+    由于曲面上某一点有无数个方向，每个方向的梯度都不同，而只有一个使函数上升最快的方向，这个方向的梯度绝对值最大，与之相反的方向就是下降最快的方向。
+
+6. What's the advantages of the 3rd gradient descent method compared to the previous methods?
+Ans:能够使变量（k、b）沿着正确的方向变化，使用最少次数来得到最小的loss值，但需要控制好步长。
+
+7. Using the simple words to describe: What's the machine leanring.
+Ans:机器学习是一种通过各种手段，充分利用计算机优势，将人类思维体系和知识积累映射进机器的方法或技术，达到人机交融的效果。
+
