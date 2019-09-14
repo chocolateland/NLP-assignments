@@ -17,15 +17,18 @@ Ans:是的，但仍然有较多缺点；
     3）未能解决线性拟合复杂度不够，容易出现欠拟合、过拟合的问题。
 
 4. Why do we use Derivative / Gredient to fit a target function?
-Ans:通过梯度下降的方法，对变量求偏导，确定变量（k、b）的变化方向（沿着偏导的反方向变化），来实现对k、b变化方向的有效监督，提高效率。
+Ans:负梯度方向是函数下降最快的方向
+通过梯度下降的方法，对变量求偏导，确定变量（k、b）的变化方向（沿着偏导的反方向变化），来实现对k、b变化方向的有效监督，提高效率。
 
 5. In the words 'Gredient Descent', what's the Gredient and what's the Descent?
-Ans:梯度是高维导数的另一种说法，它给出了最陡峭的上升方向，对于二次曲线，就是对x的导数，对于三维曲面，梯度就是曲面某点对指定方向的偏导数；
+Ans:梯度是损失函数对参数的偏导数，下降即是按梯度的负方向；
+梯度是高维导数的另一种说法，它给出了最陡峭的上升方向，对于二次曲线，就是对x的导数，对于三维曲面，梯度就是曲面某点对指定方向的偏导数；
     由于曲面上某一点有无数个方向，每个方向的梯度都不同，而只有一个使函数上升最快的方向，这个方向的梯度绝对值最大，与之相反的方向就是下降最快的方向。
 
 6. What's the advantages of the 3rd gradient descent method compared to the previous methods?
 Ans:能够使变量（k、b）沿着正确的方向变化，使用最少次数来得到最小的loss值，但需要控制好步长。
 
 7. Using the simple words to describe: What's the machine leanring.
-Ans:机器学习是一种通过各种手段，充分利用计算机优势，将人类思维体系和知识积累映射进机器的方法或技术，达到人机交融的效果。
+Ans:机器学习是一种通过各种手段，将人类思维体系和知识积累映射进机器的方法或技术，达到人机交融的效果。
+输入x,y及学习方法，输出x与y之间对应关系
 
